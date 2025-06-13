@@ -130,9 +130,12 @@ body {
 .job-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
     gap: 25px;
     margin-top: 40px;
+    
     /* background-color: #312e81; */
+
 }
 
 .job-card {
