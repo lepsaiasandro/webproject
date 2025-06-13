@@ -1,124 +1,130 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #7936f5;
-  color: #1e293b;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #7936f5;
+    color: #1e293b;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .left_area {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 100vh;
-  background-color: #312e81;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 160px;
-  box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #312e81;
+    padding-top: 150px;
+    box-sizing: border-box;
+    border-right: 1px solid #e0e7ff;
 }
 
 .left_header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 150px;
-  background-color: white;
-  color: #312e81;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #e2e8f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #312e81;
+    border-bottom: 1px solid #e2e8f0;
+    box-sizing: border-box;
 }
 
 .logo {
-  width: 80px;
-  margin-bottom: 5px;
+    width: 80px;
+    margin-bottom: 5px;
 }
 
 .title {
-  font-size: 24px;
-  letter-spacing: 2px;
-  margin: 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .main_buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .nav-link {
-  width: 80%;
-  padding: 12px;
-  border-radius: 30px;
-  background-color: #ffffff;
-  color: #4f46e5;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  transition: all 0.3s ease;
+    width: 80%;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #6366f1;
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #6366f1;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Main content with margin-left */
 .main {
-  margin-left: 20%;
-  padding: 100px 60px 40px;
-  background-color: #f1f5f9;
-  min-height: 100vh; /* Ensures it can grow */
-  box-sizing: border-box;
+    margin-left: 20%;
+    padding: 60px;
+    padding-bottom: 80px;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .main_info {
-  background-color: white;
-  padding: 50px 150px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 50px 150px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .welcome {
-  color: #312e81;
-  border-bottom: 5px solid #6366f1;
-  padding-bottom: 10px;
-  font-size: 38px;
+    color: #312e81;      
+    border-bottom: 5px solid #6366f1; 
+    padding-bottom: 10px; 
+    font-size: 38px;
 }
 
 .information {
-  font-size: 30px;
-  color: #334155;
+    font-size: 30px;
+    color: #334155;    
 }
 
 .footer {
-  margin-left: 20%;
-  background-color: #312e81;
-  color: #e0e7ff;
-  text-align: center;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+    background-color: #312e81;
+    color: #e0e7ff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    box-sizing: border-box;
 }
-
-
-
-
-
 
 .job-grid-container {
     width: 100%;
@@ -129,10 +135,8 @@ body {
 .job-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
     gap: 25px;
     margin-top: 40px;
-    
 }
 
 .job-card {
@@ -143,8 +147,6 @@ body {
     transition: transform 0.3s ease;
     text-align: left;
     text-decoration: none;
-
-    
 }
 
 .job-card:hover {
@@ -162,4 +164,3 @@ body {
     color: #334155;
     font-size: 16px;
 }
-
