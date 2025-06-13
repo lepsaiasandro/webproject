@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main_info {
+    background-color: white;
+    padding: 10px 120px 550px;
+    margin-top: 90px;
+
+    border-radius: 12px;
+}
