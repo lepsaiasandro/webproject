@@ -8,7 +8,9 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
-
+#hide-sidebar{
+    background-image: url("images/hide-sidebar.png");
+}
 .left_area {
     position: fixed;
     top: 0;
